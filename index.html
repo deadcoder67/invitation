@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Invitation - Tanisha's Birthday Party</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Page 1: Name Entry -->
+    <div id="page1" class="page active">
+        <div class="container-page1">
+            <h1 class="title-special">Special Invitation</h1>
+            <div class="input-group">
+                <input 
+                    type="text" 
+                    id="nameInput" 
+                    class="name-input" 
+                    placeholder="Enter your name"
+                    autocomplete="off"
+                >
+                <button id="enterBtn" class="enter-btn">Enter</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: Invitation Display -->
+    <div id="page2" class="page">
+        <div class="background-overlay"></div>
+        <audio id="bgMusic" loop>
+            <source src="Pretty_Woman_-_Kal_Ho_Naa_Ho___Shah_Rukh_Khan___Preity___Shankar_Mahadevan___SEL___4K_Video(256k).mp3" type="audio/mpeg">
+        </audio>
+        
+        <div class="invitation-container">
+            <p class="invitation-text">
+                <span id="animatedName"></span>
+                <span class="static-text"> You are invited to Tanisha's Birthday Party!</span>
+            </p>
+            
+            <!-- Clickable Message Box -->
+            <div id="messageBox" class="message-box">
+                <p class="message-box-text">Click here to open the invitation!</p>
+                <span class="arrow">↓</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup-modal">
+        <div class="popup-content">
+            <button class="close-btn">&times;</button>
+            <div class="popup-message">
+                <h2>Hi There!</h2>
+                <p>If you're reading this message, it means you're a special part of my life. I'd love to invite you to my birthday party at <strong>Cup Tales Cafe</strong> on <strong>11th May at 6:30 PM</strong>.</p>
+                
+                <p>Your presence will truly make my birthday even more special, so please come. And don't worry about bringing any gifts—your presence is the biggest gift for me.</p>
+                
+                <p class="thanks-message"><strong>Thanks!</strong></p>
+                
+                <!-- Venue Information Section -->
+                <div class="venue-section">
+                    <h3>📍 Venue Details</h3>
+                    <div class="venue-info">
+                        <p class="venue-name"><strong>CUPTALES CAFE</strong></p>
+                        <p class="venue-address">
+                            Bhandariya Rd, near TELEPHONE EXCHANGE OFFICE<br>
+                            Ambedker Ward, Narayan Nagar<br>
+                            Khandwa, Madhya Pradesh 450001
+                        </p>
+                    </div>
+                    <div id="venueImageContainer" class="venue-image-container">
+                        <!-- Venue image will be added here if available -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
